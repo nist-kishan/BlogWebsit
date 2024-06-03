@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+article {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.PersonDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.userDetails {
+    flex-grow: 1;
+}
+
+.userDetails div {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+textarea {
+    resize: none;
+}
+
+.userCountry img {
+    object-fit: cover;
+    background-color: red;
+    vertical-align: middle;
+    margin: 5px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.countryCode{
+    display: flex;
+}
+
+
+
+.writerImage {
+    margin-left: 40px;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    border: 2px blue solid;
+    border-radius: 10px;
+}
+
+
+
+.writerImage img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100px;
+    max-width: 100px;
+    height: 100px;
+    display: block;
+    margin: 10px auto;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+
+
+.custom-file-upload {
+    margin-top: 30px;
+    text-align: center;
+    border: 2px solid #007bff;
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+    color: #007bff;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.custom-file-upload:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+.image-preview {
+    margin-top: 20px;
+}
+
+.blogDeltail, .blogInfo, .blogBody {
+    margin-bottom: 20px;
+}
+
+.blogDeltail label, .blogInfo label {
+    font-weight: bold;
+}
+
+#heading, #description, #blogContent {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#heading {
+    height: 50px;
+}
+
+#description {
+    height: 100px;
+}
+
+#blogContent {
+    height: 200px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.rule1 , .rule2{
+    display: flex;
+    flex-direction: row;
+}
+
+#labelrules,#labelDecision{
+   margin-top: 10px;
+}
+
+.btn input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.btn label {
+    margin-bottom: 10px;
+}
+
+.btn button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+}
+
+.btn button:hover {
+    background-color: #0056b3;
+}
+
+.msg{
+    text-align: center;
+    font-size: large;
+    color: blue;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    .PersonDetails {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .writerImage {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+

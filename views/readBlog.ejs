@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Post</title>
+    <link rel="stylesheet" href="/css/readblog.css">
+</head>
+
+<body>
+    <%- include('templates/header') %>
+        <article>
+            <div class="PersonDetails">
+                <div class="writerImage">
+                    <img src="<%= record.imagePath  %>" alt="Profile Picture">
+                </div>
+                <div class="userDetails">
+                    <div class="userName">
+                        <p>Full Name : </p>
+                        <p id="outputName">
+                            <%= record.Name %>
+                        </p>
+                    </div>
+                    <div class="userStatus">
+                        <p for="status" id="pStatus">Qualification : </p>
+                        <p id="outputStatus">
+                            <%= record.qualification %>
+                        </p>
+                    </div>
+                    <div class="userCountry">
+                        <p>Country : </p>
+                        <img src="images/flag.png" alt="country icon" id="imagecode">
+                        <p id="outputCountry">
+                            <%= record.country %>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="blogDeltail">
+                <div class="blogCategory">
+                    <p>Category : </p>
+                    <p id="outputCategories">
+                        <%= record.category %>
+                    </p>
+                </div>
+            </div>
+            <div class="blogInfo" id="blogHeading">
+                <p>Heading : </p>
+                <p id="outputHeading">
+                    <%= record.heading %>
+                </p>
+            </div>
+            <div class="blogInfo" id="blogDescription">
+                <p id="pDescription"><u>Description</u> : <%= record.description %>
+                </p>
+
+            </div>
+            </div>
+            <div class="blogBody">
+                <div class="blog">
+                    <p>Blog</p>
+                </div>
+
+                <div class="content">
+                    <p id="outputBody">
+                    <pre id="contentIndentation"><%- record.content %></pre>
+                    </p>
+                </div>
+            </div>
+            <div class="btn">
+                <button type="button" id="closeBtn">Close</button>
+            </div>
+        </article>
+        <%- include('templates/footer') %>
+            <script src="/js/countryOption.js"></script>
+            <script src="/js/readBlogBtn.js"></script>
+</body>
+
+</html>

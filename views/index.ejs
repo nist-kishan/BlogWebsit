@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/homePage.css">
+</head>
+
+<body>
+    <%- include('templates/header') %>
+    <section>
+        <div class="createBlog">
+            <p class="initPara">
+                Are you interested in writing a blog?<br> You can create your own blog by clicking on the "Create Blog"
+                button.
+            </p>
+            <button type="button" class="btnblog" id="createBtn">Create Blog</button>
+        </div>
+
+        <div class="readBlog">
+            <p class="initPara">
+                Are you intrigued by the idea of perusing blogs?<br>
+                There is an extensive array of blog collections tailored to various categories, depending on your
+                preferences
+            </p>
+            <button type="button" class="btnblog" id="searchBtn">Search Blog</button>
+        </div>
+    </section>
+    <article>
+        <h2>Recent Blog</h2>
+        <%- include('partial/recentBlog') %>
+    </article>
+    <%- include('templates/footer') %>
+    <script src="js/indexbtn.js"></script>
+</body>
+
+</html>

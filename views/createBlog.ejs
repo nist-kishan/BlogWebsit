@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog</title>
+    <link rel="stylesheet" href="/css/createBlog.css">
+</head>
+
+<body>
+    <%- include('templates/header') %>
+        <article>
+            <p id="msg">
+                <%= msg %>
+            </p>
+            <form action="/createBlog/post" method="post" enctype="multipart/form-data">
+                <div class="PersonDetails">
+                    <div class="userDetails">
+                        <div class="userName">
+                            <label for="name" id="labelName">Full Name</label>
+                            <input type="text" name="Name" id="name" placeholder="Name" required>
+                        </div>
+                        <div class="email">
+                            <label for="userEmail" id="labelEmail">Email</label>
+                            <input type="email" name="email" id="userEmail" placeholder="email" required>
+                        </div>
+                        <div class="userStatus">
+                            <label for="qualification" id="labelStatus">Qualification</label>
+                            <input type="text" name="qualification" id="qualification" placeholder="Qualification"
+                                required>
+                        </div>
+                        <div class="userCountry">
+                            <label for="country">Country</label>
+                            <div class="countryCode">
+                                <img src="https://flagsapi.com/IN/flat/64.png" alt="" id="flagImg">
+                                <select name="country" id="country" required>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="writerImage">
+                        <img src="/uploads/male.jpg" alt="profile Picture" id="setImage">
+                        <label for="imageUpload" class="custom-file-upload">Upload Image</label>
+                        <input type="file" id="imageUpload" name="image" placeholder="Upload" accept="image/*">
+                    </div>
+                </div>
+                <div class="blogDetail">
+                    <div class="blogCategory">
+                        <label for="categories">Category</label>
+                        <select name="category" id="categories" required>
+                        </select>
+                    </div>
+                    <div class="blogInfo" id="blogHeading">
+                        <label for="heading">Heading of Your Blog</label>
+                        <textarea name="heading" id="heading" placeholder="Heading of your Blog" maxlength="150"
+                            required></textarea>
+                    </div>
+                    <div class="blogInfo" id="blogDescription">
+                        <label for="description">Description</label>
+                        <textarea name="description" id="description"
+                            placeholder="short description of your blog in 200 words.." maxlength="300"
+                            required></textarea>
+                    </div>
+                </div>
+                <div class="blogBody">
+                    <textarea name="content" id="blogContent"
+                        placeholder="Describe your blog without any word limitations" required></textarea>
+                </div>
+                <div class="btn">
+                    <div class="rulescheck">
+                        <div class="rule1">
+                            <input type="checkbox" id="rules" required>
+                            <label for="rules" id="labelrules">Please read the <a href="/rules">terms and condition</a>
+                                before posting your blog</label>
+                        </div>
+                        <div class="rule2">
+                            <input type="checkbox" id="decision" required>
+                            <label for="decision" id="labelDecision">Do you want to post this blog</label>
+                        </div>
+                    </div>
+                    <button type="submit">Post</button>
+                </div>
+            </form>
+        </article>
+        <%- include('templates/footer') %>
+            <script src="/js/categoryOption.js"></script>
+            <script src="/js/countryOption.js"></script>
+            <script src="/js/createBlogOption.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+section {
+    padding: 20px;
+}
+
+.createBlog, .readBlog {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.initPara{
+    width: 90%;
+    line-height: 2em;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.searchBlog {
+    display: block;
+    width: 90%;
+    height: 800px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btnblog {
+    margin-top: 20px;
+    height: 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btnblog:hover {
+    background-color: #28a745;
+}
+
+
