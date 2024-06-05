@@ -28,8 +28,6 @@ article {
     flex-grow: 1;
 }
 
-
-
 .userDetails div,.blogDeltail div,.blogInfo {
     margin-bottom: 10px;
     display: flex;
@@ -133,6 +131,12 @@ p {
     background-color: #0056b3;
 }
 
+.userDetails{
+    border: 2px green solid;
+    width: auto;
+    margin-right: 10px;    
+}
+
 @media (max-width: 600px) {
     .PersonDetails {
         flex-direction: column;
@@ -143,11 +147,4 @@ p {
         margin-top: 20px;
         text-align: center;
     }
-}
-
-
-.userDetails{
-    border: 2px green solid;
-    width: auto;
-    margin-right: 10px;    
 }
